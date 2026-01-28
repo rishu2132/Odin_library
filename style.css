@@ -30,8 +30,22 @@ body{
 .main-content{
     min-height: 92vh;
     background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 10px;
+    column-gap: 15px;
+    row-gap: 15px;
 }
 
+.main-content > * {
+    background-color: rgb(160, 154, 154);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
 
 
 .header .add-button img{

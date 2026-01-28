@@ -10,7 +10,7 @@
 
 [28.01.26]
 - [x] make the basic HTML structure for the webpage. 
-- [ ] make the structure of the card.
+- [x] make the structure of the card.
 - [ ] make the dialog bax to take user input.
 - [ ] add a button to remove the book.
 - [ ] add a button which we can use to toggle read or unread.
