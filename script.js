@@ -21,5 +21,4 @@ console.log(myLibrary)
 const body = document.querySelector("body");
 
 myLibrary.forEach((book)=>{
-    body.innerText =body.innerText + book;
 })
