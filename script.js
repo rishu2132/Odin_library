@@ -20,5 +20,16 @@ addBooktoLibrary();
 console.log(myLibrary)
 const body = document.querySelector("body");
 
+
+
 myLibrary.forEach((book)=>{
+    const card = document.createElement('div');
+    card.innerHTML =`<span> Title : ${book.title}</span>
+                     <span> Author : ${book.author}</span>
+                     <span> Pages : ${book.pages}</span>
+                     <span> Status : ${book.read}</span>`
+
+    document.getElementById("content-card").appendChild(card);
 })
+
+
