@@ -50,5 +50,17 @@ body{
 
 .header .add-button img{
     height: 48px;
+    cursor: pointer;
 
+}
+
+dialog{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+dialog > form{
+    display:grid;
+    grid-template-rows: repeat(4, 1fr);
 }

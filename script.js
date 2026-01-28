@@ -17,12 +17,13 @@ function addBooktoLibrary(){
 }
 
 addBooktoLibrary();
-console.log(myLibrary)
+
 const body = document.querySelector("body");
 
 
 
 myLibrary.forEach((book)=>{
+    console.log(book.id)
     const card = document.createElement('div');
     card.innerHTML =`<span> Title : ${book.title}</span>
                      <span> Author : ${book.author}</span>
@@ -31,5 +32,12 @@ myLibrary.forEach((book)=>{
 
     document.getElementById("content-card").appendChild(card);
 })
+
+const dialog = document.querySelector("dialog");
+const addButton = document.querySelector(".add-button");
+
+addButton.addEventListener("click", () => {
+    dialog.showModal();
+});
 
 
