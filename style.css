@@ -54,13 +54,3 @@ body{
 
 }
 
-dialog{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-dialog > form{
-    display:grid;
-    grid-template-rows: repeat(4, 1fr);
-}

@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ODIN_Library</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    
 </head>
 <body>
 
     <dialog>
         <h3>Book Details</h3>
-        <form action="example.com" method="post">
+        <form id="fill-form" method="dialog">
             <label for="book_title">Book's Title*</label>
-            <input type="text" id="book_title" name="book_title">
+            <input type="text" id="book_title" name="book_title" required>
 
             <label for="author_name">Book's Author*</label>
-            <input type="text" id="author_name" name="author_name">
+            <input type="text" id="author_name" name="author_name" required>
 
             <label for="no_ofpages">Number of pages</label>
-            <input type="number" id="no_ofpages" name="no_ofpages">
+            <input type="number" id="no_ofpages" name="no_ofpages" required>
 
-            <select name="reading_status" id="status">
+            <select name="reading_status" id="status" required>
+                <option value="" disabled selected>Choose...</option>
                 <option value="read">Read</option>
                 <option value="unread">Unread</option>
             </select>
             
+            <input type="submit" value="submit">
         </form>
     </dialog>
     <div class="container">
@@ -67,6 +69,6 @@
         </div>
         
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
