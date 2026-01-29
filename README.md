@@ -22,4 +22,8 @@
 
 - So don't apply CSS directly to dialog tag, either apply through dialog[open] or to form.
 
-- 
+- Learnt about <b>FormData(form_name)</b> -> which basically store data of the form, which can be transformed to an object using <b>Object.fromEntries()</b>
+
+- how to reset the form <b color="red">form.reset()</b>.
+
+- how to create object constructor .
